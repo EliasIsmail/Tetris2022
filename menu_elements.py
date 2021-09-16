@@ -11,12 +11,6 @@ from firebase import *
 def relative_path(file_name):
     return os.path.join(getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__))), file_name)
 
-
-token = 'd469b0bf4c8196b2c8d57ad3e20657ddfa6d8854'
-g = Github(token)
-repo = g.get_user().get_repo('TetrisNew')
-file = repo.get_contents("leaderboard.txt")
-
 # Initialize pygame modules
 pygame.mixer.pre_init(48000, -16, 2, 2096)
 pygame.init()

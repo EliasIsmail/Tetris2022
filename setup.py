@@ -1,5 +1,5 @@
 import cx_Freeze
-from GameElements import bøffel_videos, list_of_songs
+from game_elements import bøffel_videos, list_of_songs
 
 include_files = []
 for i in range (1,8):

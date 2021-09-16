@@ -1,4 +1,4 @@
-# Tetris2021
+# Tetris2022
 Tetris made in Python!
 
 # Running the game

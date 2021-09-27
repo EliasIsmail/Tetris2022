@@ -71,7 +71,7 @@ class MenuElements:
         self.main_color = WHITE
         self.music_color = BLACK
         #self.leaderboard = []
-        self.leaderboard = OrderedDict()
+        self.leaderboard = []
     
     def show_music(self, title, artist, x, y, font, text_color, panel_color):
         music_text = font.render("Now playing: " + title + " by " + artist, True, text_color)

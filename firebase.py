@@ -4,8 +4,7 @@ import os
 
 db_url = 'https://tetris-7eac9-default-rtdb.europe-west1.firebasedatabase.app'
 
-desktop = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
-cred = credentials.Certificate(desktop+"\\tetris-7eac9-firebase-adminsdk-7iimv-71ce654bec.json")
+cred = credentials.Certificate("tetris-7eac9-firebase-adminsdk-7iimv-71ce654bec.json")
 firebase_admin.initialize_app(cred, {'databaseURL':db_url})
 
 ref = db.reference("/")

@@ -300,7 +300,6 @@ class Game():
             'Score': score
         })
         self.view.menu.leaderboard = sorted(self.view.menu.leaderboard, key=lambda x:x['Score'], reverse=True)[:20]
-        print("top lb is" + self.view.menu.leaderboard[0]['Name'])
         for entry in self.view.menu.leaderboard:
             if single_player.name in entry.values() and score in entry.values(): return True
         else: return False
